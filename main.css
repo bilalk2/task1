@@ -1,0 +1,195 @@
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+:root {
+  --main_color: aqua;
+  --main_font_style: sans-serif;
+}
+.main {
+  display: flex;
+}
+.main1,
+.main2 {
+  /* height: 685px; */
+  width: 50%;
+  position: relative;
+}
+/* Style of main1 */
+.main1 {
+  background-image: url("image.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  overflow: hidden;
+}
+.main1 p {
+  margin-left: 20%;
+  margin-right: 20%;
+  color: var(--main_color);
+  font-family: var(--main_font_style);
+}
+.main1 .work {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.main1 .lorem {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+@media (max-width: 516px) {
+  .main1 .work {
+    font-size: 26px;
+  }
+  .main1 .lorem {
+    font-size: 18px;
+  }
+}
+
+/* Style of main2 */
+.main2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main2 div {
+  width: 100%;
+  margin-bottom: 28px;
+}
+.main2 .sign {
+  margin-left: 61%;
+  margin-right: 1%;
+  font-family: system-ui;
+}
+.main2 .sign a {
+  color: black;
+}
+.main2 .welcom {
+  margin-top: -25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main2 .button button,
+.main2 form input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.main2 .button button {
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Avenir;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30.05px;
+  cursor: pointer;
+  font-family: var(--main_font_style);
+}
+.main2 .button button img {
+  margin-right: 10px;
+}
+.main2 form input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #66666659;
+}
+.main2 form label {
+  font-family: var(--main_font_style);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #666666;
+}
+.main2 form .password {
+  display: flex;
+  justify-content: space-between;
+}
+.main2 form .password span {
+  display: flex;
+  align-items: center;
+}
+.wel {
+  display: flex;
+  font-family: monospace;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+}
+.hr {
+  position: relative;
+}
+.hr::after {
+  content: "OR";
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -61%;
+  left: 40%;
+  font-family: Avenir;
+  font-size: 18px;
+  line-height: 24.59px;
+  color: #666666;
+}
+.forget {
+  margin-top: -11px;
+  display: flex;
+  justify-content: end;
+}
+.main2 form .sub {
+  background: #997825;
+  width: 50%;
+  height: 50px;
+  border-radius: 32px;
+  cursor: pointer;
+  color: white;
+}
+.main2 form .sup {
+  font-family: var(--main_font_style);
+  margin-top: -5%;
+  margin-left: 5%;
+}
+.main2 form a {
+  color: #111111;
+  font-family: var(--main_font_style);
+}
+@media (max-width: 800px) {
+  .main2 div {
+    width: 80%;
+  }
+  .main2 .button button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 650px) {
+  .main2 .button button {
+    line-height: normal;
+    width: 130%;
+  }
+  .main2 .wel {
+    font-size: 24px;
+  }
+  .main2 form .sub {
+    width: 83%;
+  }
+}
+@media (max-width: 530px) {
+  .main2 form label {
+    font-size: 13px;
+  }
+}
